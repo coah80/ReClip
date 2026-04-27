@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReClip</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup" aria-labelledby="title">
+      <header class="header">
+        <img class="logo" src="../icons/icon48.png" alt="">
+        <div>
+          <h1 id="title">ReClip</h1>
+          <p id="status">Loading</p>
+        </div>
+      </header>
+
+      <label class="setting" for="clip-toggle">
+        <span class="setting-copy">
+          <span class="setting-title">YouTube Clip button</span>
+          <span class="setting-detail">Show the scissors button on watch pages.</span>
+        </span>
+        <input id="clip-toggle" type="checkbox" role="switch" aria-describedby="status">
+        <span class="switch" aria-hidden="true"></span>
+      </label>
+
+      <nav class="links" aria-label="ReClip links">
+        <button id="github-link" class="link-button" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49v-1.74c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.56 2.35 1.11 2.92.85.09-.67.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.35 9.35 0 0 1 12 6.94c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92v2.85c0 .27.18.59.69.49A10.05 10.05 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/>
+          </svg>
+          GitHub
+        </button>
+        <button id="twitter-link" class="link-button" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M14.23 10.16 22.98 0h-2.07l-7.6 8.82L7.25 0H.25l9.18 13.34L.25 24h2.07l8.03-9.33L16.76 24h6.99l-9.52-13.84Zm-2.84 3.3-.93-1.33L3.06 1.56h3.2l5.97 8.53.93 1.33 7.76 11.1h-3.2l-6.33-9.06Z"/>
+          </svg>
+          @coah80
+        </button>
+      </nav>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
